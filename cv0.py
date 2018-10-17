@@ -27,7 +27,7 @@ cv2.destroyAllWindows()
 gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 gray_image = cv2.cvtColor(gray_image, cv2.COLOR_GRAY2BGR)
 height, width = img.shape[:2]
-img_line=cv2.line(gray_image,(0,0),(width,height),(255,255,0),4)
+img_line=cv2.line(gray_image,(width,0),(0,height),(255,255,0),4)
 img_line_rect =cv2.rectangle(img_line,(width//3,height//3),(width*2//3,height*2//3),(0,255,255),6)
 cv2.namedWindow("Face_line")
 cv2.startWindowThread()
